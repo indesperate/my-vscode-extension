@@ -1,0 +1,37 @@
+{
+  "name": "my-vscode-extension",
+  "displayName": "My VScode Extension",
+  "description": "personal vscode extension",
+  "version": "1.0.0",
+  "publisher": "indesperate",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": []
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "vscode:prepublish": "npm run compile"
+  },
+  "author": "indesperate",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@types/vscode": "^1.85.0",
+    "@vscode/vsce": "^2.22.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  }
+}
